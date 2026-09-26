@@ -1,17 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class MoveShell : MonoBehaviour
 {
-    private float speed = 1.0f;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public float speed = 1.0f;
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        this.transform.Translate(0,Time.deltaTime * speed * 0.5f,Time.deltaTime * speed);
+        this.transform.Translate(0, 0, Time.deltaTime * speed);
     }
 }
